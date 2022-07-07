@@ -15,7 +15,7 @@ def task2():
 
 
     if not os.path.exists('animal.json'):
-        print('Файла нету, ну ничего страшного сейчас создадим)')
+        
         while loop:
             r = requests.get(url)
             
@@ -38,7 +38,7 @@ def task2():
 
         with open('animal.json', 'w') as file:
             json.dump(data, file, indent= 2)
-        print('Файл создан.')
+        
 
 
     with open('animal.json', 'r') as file:
